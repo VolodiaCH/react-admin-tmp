@@ -10,14 +10,21 @@ Then successfully went through https://marmelab.com/react-admin/Tutorial.html un
 I've got an reported error after I performed:
 
 import React from 'react';
+
 import { Admin, Resource, ListGuesser } from 'react-admin';
+
 import jsonServerProvider from 'ra-data-json-server';
 
 const dataProvider = jsonServerProvider('http://jsonplaceholder.typicode.com');
+
 const App = () => (
-    <Admin dataProvider={dataProvider}>
-        <Resource name="users" list={ListGuesser} />
-    </Admin>
+
+<Admin dataProvider={dataProvider}>
+
+<Resource name="users" list={ListGuesser} />
+
+</Admin>
+
 );
 
 export default App;
